@@ -1,3 +1,6 @@
+// TODO remove file after full migration to TS
+// TODO update README
+
 // * Create a class
 class User {
   constructor(name, age) {

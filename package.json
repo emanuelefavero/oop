@@ -1,0 +1,36 @@
+{
+  "name": "oop",
+  "version": "1.0.0",
+  "description": "- Object-oriented programming (OOP) is a way of writing computer programs that uses \"objects\" to represent real-world things or concepts.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint --ext .ts ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanuelefavero/oop.git"
+  },
+  "keywords": [],
+  "author": "Emanuele Favero <emafaux89@gmail.com> (https://emanuelefavero.com/)",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/emanuelefavero/oop/issues"
+  },
+  "homepage": "https://github.com/emanuelefavero/oop#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^25.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.50.0",
+    "@typescript-eslint/parser": "^8.50.0",
+    "eslint": "^9.39.2",
+    "globals": "^16.5.0",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.50.0"
+  }
+}

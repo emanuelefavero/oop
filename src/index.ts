@@ -1,4 +1,4 @@
-import Singleton from './singleton/singleton.js'
+import Singleton from '#/singleton/singleton.js'
 
 // Singleton
 const instance1 = Singleton.getInstance()

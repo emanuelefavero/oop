@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "npx tsc",
+    "build": "rm -rf dist && npx tsc && npx tsc-alias",
     "start": "node dist/index.js",
     "lint": "eslint --ext .ts ."
   },
@@ -20,6 +20,12 @@
     "url": "https://github.com/emanuelefavero/oop/issues"
   },
   "type": "module",
+  "imports": {
+    "#/*": {
+      "development": "./src/*",
+      "default": "./dist/*"
+    }
+  },
   "homepage": "https://github.com/emanuelefavero/oop#readme",
   "devDependencies": {
     "@eslint/js": "^9.39.2",
@@ -28,6 +34,7 @@
     "@typescript-eslint/parser": "^8.50.0",
     "eslint": "^9.39.2",
     "globals": "^16.5.0",
+    "tsc-alias": "^1.8.16",
     "tsx": "^4.19.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.50.0"

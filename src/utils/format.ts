@@ -1,3 +1,5 @@
+import c from 'ansi-colors'
+
 export function title(text: string): void {
-  console.log(`\n=== ${text} ===`)
+  console.log(c.blue(`\n=== ${text} ===`))
 }

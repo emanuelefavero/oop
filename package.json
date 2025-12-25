@@ -38,5 +38,8 @@
     "tsx": "^4.19.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.50.0"
+  },
+  "dependencies": {
+    "ansi-colors": "^4.1.3"
   }
 }

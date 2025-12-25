@@ -1,5 +1,5 @@
 // * Create a class
-class User {
+export class User {
   constructor(public name: string, private age: number) {}
 
   // * Public method
@@ -20,4 +20,18 @@ class User {
   }
 }
 
-export default User
+// ---
+
+export function run() {
+  const user = new User('John', 24)
+  console.log(user)
+
+  console.log(`User Name: ${user.name}`) // Accessing public property
+
+  // Accessing public method, private property 'age' is not accessible directly
+  const userAge = user.getAge()
+  console.log(`User Age: ${userAge}`)
+
+  // Accessing static method `isAdult`, which cannot be called on instance
+  console.log(`Is Adult: ${User.isAdult(userAge)}`)
+}
